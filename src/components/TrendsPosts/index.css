@@ -1,0 +1,47 @@
+.TrendPost {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  padding: 12px;
+  width: 100%;
+  color: black;
+}
+
+.TrendPostPhoto {
+  background-color: lightgrey;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+}
+
+.TrendPostContent {
+  font-size: 13px;
+  padding: 0px 14px 0px 14px;
+}
+
+.TrendPostUserName {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.TrendPostUserMail {
+  color: rgb(191, 191, 191);
+}
+
+.TrendPostTags {
+  color: rgb(0, 85, 182);
+}
+
+.TrendPostIcons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.TrendPostIcons img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.TrendPostContent p {
+  padding: 7px 0px;
+}

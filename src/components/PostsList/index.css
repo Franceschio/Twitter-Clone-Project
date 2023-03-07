@@ -1,0 +1,23 @@
+.PostsList {
+  width: 100%;
+  height: 70%;
+  overflow-y: scroll;
+  position: fixed;
+  top: 20%;
+  bottom: 10%;
+  left: 0;
+  padding: 10px 5px;
+}
+
+.PostsList::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .PostsList {
+    width: 45%;
+    bottom: 0px;
+    left: 25%;
+    height: 80%;
+  }
+}
