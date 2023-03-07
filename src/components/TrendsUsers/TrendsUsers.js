@@ -28,7 +28,7 @@ const TrendsUsersPostsList = [
     photo:
       "https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png",
     title: "Society.",
-    body: "We live in a society that doesn't matter about ANYONE.",
+    body: "We live in a society that doesn't care about ANYONE.",
     userName: "Joker",
     tags: ["society", "anarchy"],
     email: "Jokes@gmail.com",
