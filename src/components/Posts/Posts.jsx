@@ -1,12 +1,24 @@
 import "./index.css";
 
+import { useEffect, useState } from "react";
+
 const Post = ({ Postdata }) => {
+  const [user, setUser] = useState({});
+
+  useEffect(() => {
+    fetch(`https://dummyjson.com/users/${Postdata.userId}`)
+      .then((res) => res.json())
+      .then((data) => {
+        !data ? null : setUser(data);
+      });
+  }, []);
+
   return (
     <div className="Post">
-      <img className="PostPhoto" src={Postdata.photo} alt={Postdata.userName} />
+      <img className="PostPhoto" src={user.image} alt={user.userName} />
       <div className="PostContent">
-        <span className="PostUserName">{Postdata.userName}</span>
-        <span className="PostUserMail"> {Postdata.email}</span>
+        <span className="PostUserName">{`${user.firstName} ${user.lastName}`}</span>
+        <span className="PostUserMail"> {user.email}</span>
         <p>{Postdata.body}</p>
         <div className="PostIcons">
           <img

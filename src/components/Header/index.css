@@ -47,37 +47,14 @@
 #headerLogo {
   height: 40px;
   width: 40px;
-}
-
-.stories {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 30px;
-  height: 60%;
-  color: black;
-  font-size: 10px;
-  overflow-x: scroll;
-}
-
-.stories::-webkit-scrollbar {
-  display: none;
-}
-
-.stories img {
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
-  object-fit: fill;
-  border: 2px solid blue;
   cursor: pointer;
 }
 
 .postPublication {
-  display: none;
+  display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  height: 80%;
+  height: 60%;
   width: 100%;
   color: black;
   font-size: 10px;
@@ -112,11 +89,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3px;
+  gap: 8px;
 }
 
 .imageIcon,
-.gifIcon {
+.gifIcon,
+.chartIcon {
   color: #3a98d1;
   cursor: pointer;
   height: 20px;
@@ -183,21 +161,13 @@
 }
 
 @media screen and (min-width: 600px) {
-  .stories {
-    display: none;
-  }
-
-  .postPublication {
-    display: flex;
-  }
-
   .nav {
     height: 20%;
   }
 
   .Header {
     width: 45%;
-    left: 25%;
+    left: 20%;
     font-size: 13px;
   }
 

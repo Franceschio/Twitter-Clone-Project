@@ -13,12 +13,6 @@ function App() {
       <SideMenu />
       <Header />
       <PostsList />
-      <div className="shareATweet">
-        <img
-          src="https://img.icons8.com/ios-glyphs/512/hand-with-pen.png"
-          alt="Share a post"
-        />
-      </div>
       <Trends />
       <Footer />
     </div>

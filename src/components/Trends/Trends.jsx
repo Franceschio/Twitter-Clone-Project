@@ -7,7 +7,7 @@ import TrendsPosts from "../TrendsPosts/TrendsPosts";
 const Trends = () => {
   return (
     <div className="Trends">
-      <h1>Trends</h1>
+      <h3>Trends</h3>
       {TrendsUsersPostsList.map((user) => (
         <TrendsPosts postData={user} key={user.id} />
       ))}

@@ -13,7 +13,10 @@ const TrendsPosts = ({ postData }) => {
         <span className="TrendPostUserMail"> {postData.email}</span>
         <p>{postData.body}</p>
         {postData.tags.map((tag) => (
-          <span className="TrendPostTags"> #{tag}</span>
+          <span className="TrendPostTags" key={tag}>
+            {" "}
+            #{tag}
+          </span>
         ))}
         <br />
         <div className="PostIcons">

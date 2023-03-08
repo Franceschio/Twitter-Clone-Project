@@ -2,9 +2,7 @@ import "./index.css";
 
 import { useState } from "react";
 
-import { BsCardImage, BsFiletypeGif } from "react-icons/bs";
-
-import UsersPostsList from "../UsersPostsMock/UsersPostsList";
+import { BsCardImage, BsFiletypeGif, BsBarChartSteps } from "react-icons/bs";
 
 const Header = () => {
   const refresh = () => {
@@ -20,13 +18,13 @@ const Header = () => {
   return (
     <div className="Header">
       <div className="nav">
-        <h3 className="homeTitle">Home</h3>
-
         <div className="menuIcon" onClick={giveMenu}>
           <div className="line1"></div>
           <div className="line2"></div>
           <div className="line3"></div>
         </div>
+
+        <h3 className="homeTitle">Home</h3>
 
         <img
           src="https://img.icons8.com/color/256/twitter--v1.png"
@@ -34,13 +32,6 @@ const Header = () => {
           id="headerLogo"
           onClick={refresh}
         />
-      </div>
-      <div className="stories">
-        {UsersPostsList.map((user) =>
-          user.hasStory === true ? (
-            <img src={user.photo} alt="user story" key={user.id} />
-          ) : null
-        )}
       </div>
       <div className="postPublication">
         <img
@@ -59,6 +50,9 @@ const Header = () => {
           </li>
           <li>
             <BsFiletypeGif className="gifIcon" />{" "}
+          </li>
+          <li>
+            <BsBarChartSteps className="chartIcon" />{" "}
           </li>
         </ul>
       </div>

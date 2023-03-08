@@ -1,5 +1,6 @@
 .Trends {
   display: none;
+  font-family: Arial;
 }
 
 @media screen and (min-width: 600px) {
@@ -8,7 +9,7 @@
     background-color: white;
     height: 100%;
     border-left: 1px solid lightgrey;
-    width: 30%;
+    width: 35%;
     position: fixed;
     right: 0;
     top: 0;
