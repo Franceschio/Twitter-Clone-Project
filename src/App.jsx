@@ -8,11 +8,13 @@ import SideMenu from "./components/SideMenu/SideMenu";
 import Trends from "./components/Trends/Trends";
 
 function App() {
+  const [inputValue, setInputValue] = useState("");
+
   return (
     <div className="App">
       <SideMenu />
-      <Header />
-      <PostsList />
+      <Header input={setInputValue} />
+      <PostsList filteredInput={inputValue} />
       <Trends />
       <Footer />
     </div>

@@ -10,6 +10,7 @@
   left: 0px;
   z-index: 3;
   border-bottom: 1px solid lightgrey;
+  border-right: 1px solid lightgrey;
 }
 
 .nav {
@@ -163,6 +164,10 @@
 @media screen and (min-width: 600px) {
   .nav {
     height: 20%;
+  }
+
+  .postPublication {
+    height: 80%;
   }
 
   .Header {

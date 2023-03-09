@@ -49,7 +49,7 @@ const TrendsUsersPostsList = [
     title: "PICKLE RICK.",
     body: "Im turned myself into a pickle guys. I'M PICKLE RIIIIIIIICK.",
     userName: "Rick Sanchez",
-    tags: ["science", "pickles", "JerryDumbass"],
+    tags: ["science", "pickles", "Jerry'sPhone"],
     email: "Wubalubadubdub!@gmail.com",
     reactions: 2,
   },

@@ -1,10 +1,10 @@
 import "./index.css";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import { BsCardImage, BsFiletypeGif, BsBarChartSteps } from "react-icons/bs";
 
-const Header = () => {
+const Header = ({ input }) => {
   const refresh = () => {
     location.reload();
   };
@@ -43,6 +43,9 @@ const Header = () => {
           type="text"
           placeholder="What's happening?"
           className="postPubInput"
+          onChange={(event) => {
+            input(event.target.value);
+          }}
         />
         <ul>
           <li>

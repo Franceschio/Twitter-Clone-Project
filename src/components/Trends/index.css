@@ -7,24 +7,27 @@
   .Trends {
     display: block;
     background-color: white;
-    border-left: 1px solid lightgrey;
     width: 35%;
-    position: absolute;
+    height: 100vh;
+    position: fixed;
     right: 0;
     top: 0;
     padding: 10px 5px;
+    overflow-y: scroll;
   }
 
   .Trends::-webkit-scrollbar {
     display: none;
   }
 
-  .Trends h3 {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    height: 35px;
+  .scrolled {
+    border-radius: 40px;
+    top: 20%;
+    width: 30%;
+    height: 60%;
+    left: 68%;
+    right: 30%;
+    border: 1px solid lightgrey;
     padding: 10px;
-    background-color: white;
   }
 }

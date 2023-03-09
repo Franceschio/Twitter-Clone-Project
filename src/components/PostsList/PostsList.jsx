@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import Post from "../Posts/Posts";
 
-const PostsList = () => {
+const PostsList = ({ filteredInput }) => {
   const [UsersPostsList, setUsersPostsList] = useState([]);
 
   useEffect(() => {
@@ -13,9 +13,13 @@ const PostsList = () => {
       .then((data) => setUsersPostsList(data.posts));
   }, []);
 
+  const filteredUsers = UsersPostsList.filter((post) =>
+    post.body.includes(filteredInput)
+  );
+
   return (
     <div className="PostsList">
-      {UsersPostsList.map((user) => (
+      {filteredUsers.map((user) => (
         <Post Postdata={user} key={user.id} />
       ))}
     </div>

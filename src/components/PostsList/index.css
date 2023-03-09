@@ -5,6 +5,7 @@
   bottom: 10%;
   left: 0;
   padding: 10px 5px;
+  border-right: 1px solid lightgrey;
 }
 
 .PostsList::-webkit-scrollbar {
@@ -16,6 +17,5 @@
     width: 45%;
     bottom: 0px;
     left: 20%;
-    height: 80%;
   }
 }
