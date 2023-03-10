@@ -6,7 +6,7 @@ const Modal = ({ modalOpened, setModalOpen, postId }) => {
     setModalOpen((prev) => !prev);
   };
 
-  //modificherà il contenuto del body del post
+  //modificherà il contenuto del post
 
   const modifyPost = (event) => {
     event.preventDefault();
