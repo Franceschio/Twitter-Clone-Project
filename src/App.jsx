@@ -6,17 +6,31 @@ import PostsList from "./components/PostsList";
 import Footer from "./components/Footer";
 import SideMenu from "./components/SideMenu/SideMenu";
 import Trends from "./components/Trends/Trends";
+import Modal from "./components/Modal/Modal";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
+
+  const [modalOpened, setModalOpened] = useState(false);
+
+  const [postId, setpostId] = useState(null);
 
   return (
     <div className="App">
       <SideMenu />
       <Header input={setInputValue} />
-      <PostsList filteredInput={inputValue} />
+      <PostsList
+        filteredInput={inputValue}
+        setModalOpen={setModalOpened}
+        setpostId={setpostId}
+      />
       <Trends />
       <Footer />
+      <Modal
+        modalOpened={modalOpened}
+        setModalOpen={setModalOpened}
+        postId={postId}
+      />
     </div>
   );
 }

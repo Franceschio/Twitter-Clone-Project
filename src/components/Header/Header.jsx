@@ -41,7 +41,7 @@ const Header = ({ input }) => {
         />
         <input
           type="text"
-          placeholder="What's happening?"
+          placeholder="Search"
           className="postPubInput"
           onChange={(event) => {
             input(event.target.value);

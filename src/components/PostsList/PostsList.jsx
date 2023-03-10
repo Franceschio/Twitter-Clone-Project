@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import Post from "../Posts/Posts";
 
-const PostsList = ({ filteredInput }) => {
+const PostsList = ({ filteredInput, setModalOpen, setpostId }) => {
   const [UsersPostsList, setUsersPostsList] = useState([]);
 
   useEffect(() => {
@@ -20,7 +20,12 @@ const PostsList = ({ filteredInput }) => {
   return (
     <div className="PostsList">
       {filteredUsers.map((user) => (
-        <Post Postdata={user} key={user.id} />
+        <Post
+          Postdata={user}
+          key={user.id}
+          setModalOpen={setModalOpen}
+          setpostId={setpostId}
+        />
       ))}
     </div>
   );
