@@ -7,10 +7,6 @@
   padding: 10px 5px;
 }
 
-.PostsList::-webkit-scrollbar {
-  display: none;
-}
-
 @media screen and (min-width: 600px) {
   .PostsList {
     width: 45%;
