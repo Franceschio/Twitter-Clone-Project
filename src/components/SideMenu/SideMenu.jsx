@@ -1,6 +1,11 @@
+import { useState } from "react";
 import "./index.css";
 
-const SideMenu = () => {
+const SideMenu = ({ setTweetModalOpen }) => {
+  const openTweetModal = () => {
+    setTweetModalOpen((prev) => !prev);
+  };
+
   return (
     <div className="SideMenu">
       <ul>
@@ -40,7 +45,7 @@ const SideMenu = () => {
           <p>Bookmarks</p>
         </li>
       </ul>
-      <button>Tweet</button>
+      <button onClick={openTweetModal}>Tweet</button>
     </div>
   );
 };
