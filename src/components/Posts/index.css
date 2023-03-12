@@ -37,6 +37,12 @@
   height: 20px;
   cursor: pointer;
 }
+
 .PostContent p {
   padding: 7px 0px;
+}
+
+.like span {
+  color: rgb(159, 159, 159);
+  font-size: 12px;
 }

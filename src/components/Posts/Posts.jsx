@@ -18,15 +18,16 @@ const Post = ({ Postdata, setModalOpen, setpostId }) => {
     setpostId(() => Postdata.id);
   };
 
-  //   fetch('https://dummyjson.com/posts/1', {
-  //   method: 'PUT', /* or PATCH */
-  //   headers: { 'Content-Type': 'application/json' },
-  //   body: JSON.stringify({
-  //     title: 'I think I should shift to the moon',
-  //   })
-  // })
-  // .then(res => res.json())
-  // .then(console.log);
+  const setLikeIcon = () => {
+    setLike((prev) => !prev);
+  };
+
+  const removeLike = () => setNLikes(parseInt(nLikes) - 1);
+
+  const addLike = () => setNLikes(parseInt(nLikes) + 1);
+
+  const [isLiked, setLike] = useState(false);
+  const [nLikes, setNLikes] = useState(0);
 
   return (
     <div className="Post">
@@ -45,10 +46,24 @@ const Post = ({ Postdata, setModalOpen, setpostId }) => {
             alt="modify"
             onClick={modifyThePost}
           />
-          <img
-            src="https://img.icons8.com/ios-glyphs/256/hearts.png"
-            alt="heart"
-          />
+
+          <div className="like" onClick={setLikeIcon}>
+            {isLiked === true ? (
+              <img
+                src="https://img.icons8.com/fluency/512/hearts.png"
+                alt="heart"
+                onClick={removeLike}
+              />
+            ) : (
+              <img
+                src="https://img.icons8.com/ios-glyphs/256/hearts.png"
+                alt="heart"
+                onClick={addLike}
+              />
+            )}
+            <span>{nLikes}</span>
+          </div>
+
           <img src="https://img.icons8.com/ios/256/upload.png" alt="upload" />
         </div>
       </div>

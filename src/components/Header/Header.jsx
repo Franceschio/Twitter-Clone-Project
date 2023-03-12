@@ -33,7 +33,7 @@ const Header = ({ input }) => {
           onClick={refresh}
         />
       </div>
-      <div className="postPublication">
+      <div className="postSearch">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"
           alt="Prof. pic."
@@ -41,7 +41,7 @@ const Header = ({ input }) => {
         />
         <input
           type="text"
-          placeholder="Search"
+          placeholder="Search..."
           className="postPubInput"
           onChange={(event) => {
             input(event.target.value);
@@ -105,7 +105,6 @@ const Header = ({ input }) => {
             <p>search</p>
           </li>
         </ul>
-        <button>Tweet</button>
       </div>
     </div>
   );

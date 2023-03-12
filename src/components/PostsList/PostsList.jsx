@@ -27,6 +27,7 @@ const PostsList = ({ filteredInput, setModalOpen, setpostId }) => {
           setpostId={setpostId}
         />
       ))}
+      <div className="endPage"></div>
     </div>
   );
 };

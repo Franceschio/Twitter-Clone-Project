@@ -8,6 +8,7 @@ const TrendsUsersPostsList = [
     tags: ["fantasy", "darkSide", "JoinTheEmpire"],
     email: "Vader@gmail.com",
     reactions: 2,
+    usersLikes: 12909,
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ const TrendsUsersPostsList = [
     tags: ["science", "blackHole", "Rick"],
     email: "Morty@gmail.com",
     reactions: 2,
+    usersLikes: 300304,
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const TrendsUsersPostsList = [
     tags: ["society", "anarchy"],
     email: "Jokes@gmail.com",
     reactions: 5,
+    usersLikes: 789845,
   },
   {
     id: 4,
@@ -41,6 +44,7 @@ const TrendsUsersPostsList = [
     tags: ["world", "titans"],
     email: "ErenXfreedom@gmail.com",
     reactions: 1,
+    usersLikes: 1001,
   },
   {
     id: 5,
@@ -52,6 +56,7 @@ const TrendsUsersPostsList = [
     tags: ["science", "pickles", "Jerry'sPhone"],
     email: "Wubalubadubdub!@gmail.com",
     reactions: 2,
+    usersLikes: 900342,
   },
   {
     id: 6,
@@ -63,6 +68,7 @@ const TrendsUsersPostsList = [
     tags: ["food", "classic", "american"],
     email: "SnoppCat@gmail.com",
     reactions: 3,
+    usersLikes: 30018,
   },
   {
     id: 7,
@@ -74,6 +80,7 @@ const TrendsUsersPostsList = [
     tags: ["80's", "sitcom", "horsin'Around"],
     email: "HorsinHorse@gmail.com",
     reactions: 3,
+    usersLikes: 18345,
   },
   {
     id: 8,
@@ -85,6 +92,7 @@ const TrendsUsersPostsList = [
     tags: ["NirvanaNight", "Vengeance", "DarkKnight", "inTheMood"],
     email: "Imbatman@gmail.com",
     reactions: 5,
+    usersLikes: 678902,
   },
   {
     id: 9,
@@ -96,6 +104,7 @@ const TrendsUsersPostsList = [
     tags: ["Workout", "Training", "Gym", "💪"],
     email: "Kakarot@outlook.com",
     reactions: 5,
+    usersLikes: 6503,
   },
   {
     id: 10,
@@ -107,6 +116,7 @@ const TrendsUsersPostsList = [
     tags: ["paintedBlack", "pureHate"],
     email: "totalBlack@outlook.com",
     reactions: 5,
+    usersLikes: 2403,
   },
 ];
 

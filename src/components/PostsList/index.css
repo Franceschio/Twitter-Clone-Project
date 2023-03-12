@@ -1,5 +1,6 @@
 .PostsList {
   width: 100%;
+  height: 60%;
   position: absolute;
   top: 20%;
   bottom: 10%;
@@ -7,10 +8,19 @@
   padding: 10px 5px;
 }
 
+.endPage {
+  height: 20%;
+  width: 100%;
+}
+
 @media screen and (min-width: 600px) {
   .PostsList {
     width: 45%;
     bottom: 0px;
     left: 20%;
+  }
+
+  .endPage {
+    display: none;
   }
 }
