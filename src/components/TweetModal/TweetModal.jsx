@@ -6,13 +6,14 @@ const TweetModal = ({ tweetModalOpened, setTweetModalOpened }) => {
     setTweetModalOpened((prev) => !prev);
   };
 
-  const publicPost = () => {
+  const publicPost = (e) => {
+    e.preventDefault();
     fetch("https://dummyjson.com/posts/add", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        body: postPublicationText,
-        userId: postPublicationId,
+        body: `${postPublicationText.current.value}`,
+        userId: `${postPublicationId.current.value}`,
       }),
     })
       .then((res) => res.json())
