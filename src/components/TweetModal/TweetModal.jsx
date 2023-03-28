@@ -17,7 +17,10 @@ const TweetModal = ({ tweetModalOpened, setTweetModalOpened }) => {
       }),
     })
       .then((res) => res.json())
-      .then(console.log);
+      .then((data) => {
+        console.log(data);
+        closeModal();
+      });
   };
 
   const postPublicationId = useRef(null);
